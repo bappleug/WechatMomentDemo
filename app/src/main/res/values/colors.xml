@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#393a3f</color>
+    <color name="colorPrimaryDark">#303135</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDivider">#d3d3d3</color>
+    <color name="textColorPrimary">#4b4b4b</color>
+    <color name="textColorSecondary">#808080</color>
+    <color name="textColorInverse">#ffffff</color>
+    <color name="textColorAccent">#576b95</color>
+    <color name="ic_launcher_background">#393A3F</color>
+</resources>
