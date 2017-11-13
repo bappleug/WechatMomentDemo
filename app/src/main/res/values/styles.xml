@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBg</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
@@ -19,5 +20,6 @@
         <item name="android:background">@color/colorPrimary</item>
         <item name="actionMenuTextColor">@color/textColorInverse</item>
     </style>
+
 
 </resources>

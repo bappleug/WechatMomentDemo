@@ -1,29 +1,34 @@
 package app.ray.wechatmements;
 
-import android.app.Activity;
 import android.app.Application;
 
-import javax.inject.Inject;
-
-import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasActivityInjector;
+import app.ray.wechatmements.di.AppComponent;
+import app.ray.wechatmements.di.AppModule;
+import app.ray.wechatmements.di.DaggerAppComponent;
 
 /**
  * Created by Ray on 2017/11/10.
  */
 
-public class WeChatMomentsApp extends Application implements HasActivityInjector {
+public class WeChatMomentsApp extends Application {
 
-    @Inject
-    DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
+    private static WeChatMomentsApp sApp;
+    private AppComponent mComponent;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        sApp = this;
+        mComponent = DaggerAppComponent.builder()
+                .appModule(new AppModule())
+                .build();
     }
 
-    @Override
-    public DispatchingAndroidInjector<Activity> activityInjector() {
-        return dispatchingAndroidInjector;
+    public static WeChatMomentsApp getInstance(){
+        return sApp;
+    }
+
+    public AppComponent getComponent(){
+        return mComponent;
     }
 }

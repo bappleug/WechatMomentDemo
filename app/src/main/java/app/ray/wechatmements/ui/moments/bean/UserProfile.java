@@ -1,4 +1,4 @@
-package app.ray.wechatmements.net;
+package app.ray.wechatmements.ui.moments.bean;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Ray on 2017/11/10.
  */
 
-public class UserProfileResponse {
+public class UserProfile implements MomentsItem {
 
 
     /**

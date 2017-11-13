@@ -2,11 +2,18 @@
 <resources>
     <color name="colorPrimary">#393a3f</color>
     <color name="colorPrimaryDark">#303135</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#2e2e32</color>
     <color name="colorDivider">#d3d3d3</color>
+    <color name="colorError">#919191</color>
     <color name="textColorPrimary">#4b4b4b</color>
     <color name="textColorSecondary">#808080</color>
     <color name="textColorInverse">#ffffff</color>
     <color name="textColorAccent">#576b95</color>
+    <color name="windowBg">#f8f8f8</color>
+
+    <color name="white">#ffffffff</color>
+
     <color name="ic_launcher_background">#393A3F</color>
+
+    <color name="moments_avatar_border">#bfbfbf</color>
 </resources>

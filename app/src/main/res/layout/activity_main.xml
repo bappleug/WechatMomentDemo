@@ -5,17 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.ray.wechatmements.ui.moments.MomentActivity">
+    tools:context="app.ray.wechatmements.ui.moments.MomentsActivity">
 
-    <android.support.v7.widget.Toolbar
+    <include
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?android:actionBarSize"/>
+        layout="@layout/lo_toolbar"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMoments"
+    <app.ray.wechatmements.widgets.PullToRefreshLayout
+        android:id="@+id/loPullRefresh"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="?android:actionBarSize"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height"
+        app:ptr_topHideHeight="@dimen/moments_header_top_hide_height">
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMoments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDivider"
+            android:layout_marginTop="@dimen/moments_header_top_hide_height_nag"
+            tools:listitem="@layout/item_moments_tweet"/>
+        <app.ray.wechatmements.widgets.PullToRotateView
+            android:layout_width="@dimen/pull_to_roll_view_size"
+            android:layout_height="@dimen/pull_to_roll_view_size"
+            android:layout_marginTop="@dimen/pull_to_roll_view_margin_top_hide"
+            android:layout_marginLeft="@dimen/pull_to_roll_view_margin_left"
+            android:layout_marginStart="@dimen/pull_to_roll_view_margin_left"
+            android:src="@mipmap/ic_loading_level1"/>
+    </app.ray.wechatmements.widgets.PullToRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

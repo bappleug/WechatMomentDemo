@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefreshLayout">
+        <attr name="ptr_topHideHeight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="PullToRotateView">
+        <attr name="ptr_rotateSpeed" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="NetworkImageView">
+        <attr name="niv_placeholderResId" format="reference" />
+        <attr name="niv_errorResId" format="reference" />
+        <attr name="niv_url" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="AutoSizeImageView">
+        <attr name="test_width" format="dimension"/>
+        <attr name="test_height" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="text" format="string"/>
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="contentLineSpacingMultiplier" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

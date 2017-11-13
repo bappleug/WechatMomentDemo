@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/moments_page_padding">
+
+    <app.ray.wechatmements.widgets.SquaredImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/moments_item_avatar_size"
+        android:layout_height="@dimen/moments_item_avatar_size"
+        android:scaleType="centerCrop"
+        app:niv_placeholderResId="@drawable/image_place_holder"
+        app:niv_errorResId="@drawable/image_place_holder"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/moments_base_margin"
+        android:layout_marginStart="@dimen/moments_base_margin">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorAccent"
+            android:textSize="@dimen/moments_item_name_text_size"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="somebody" />
+
+        <app.ray.wechatmements.widgets.ExpandableTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/moments_base_margin"
+            app:DrawableAndTextGravity="left"
+            app:animDuration="200"
+            app:collapseText="@string/collapsed_string"
+            app:expandText="@string/expand_string"
+            app:contentLineSpacingMultiplier="1.3"
+            app:contentTextColor="@color/textColorPrimary"
+            app:contentTextSize="@dimen/moments_item_name_text_size"
+            app:expandCollapseTextColor="@color/textColorAccent"
+            app:maxCollapsedLines="5" />
+
+        <app.ray.wechatmements.widgets.AutoSizeImageView
+            android:id="@+id/iv_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/moments_base_margin"
+            app:niv_placeholderResId="@drawable/image_place_holder"
+            app:niv_errorResId="@drawable/image_place_holder" />
+
+        <LinearLayout
+            android:id="@+id/layout_imgs0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/moments_base_margin"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:id="@+id/squaredImageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_imgs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_imgs2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <app.ray.wechatmements.widgets.SquaredImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:niv_placeholderResId="@drawable/image_place_holder"
+                app:niv_errorResId="@drawable/image_place_holder" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/moments_base_margin">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:text="昨天"/>
+
+            <ImageView
+                android:id="@+id/btn_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/comment_selected" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_bg"
+            android:padding="@dimen/moments_base_margin"
+            android:layout_marginTop="@dimen/moments_base_margin"
+            tools:listitem="@layout/item_comment"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WeChatMements</string>
+    <string name="moments">Moments</string>
+    <string name="fetch_data_error">Network error, please retry.</string>
+
+    <string name="expand_string">show all</string>
+    <string name="collapsed_string">hide</string>
+    <string name="retry_load_moments">Network error, click to retry.</string>
 </resources>
